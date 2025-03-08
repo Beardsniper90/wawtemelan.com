@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAWTEMELAN</title>
+    <style>
+        /* Style for the body */
+        body {
+            background-color: white;
+            font-family: 'Helvetica', sans-serif;
+            color: black;
+            text-align: center;
+            margin: 0;
+            font-weight: normal;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Style for the header */
+        header {
+            width: 100%;
+            height: 45px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Style for the header text container */
+        .header-text {
+            display: flex;
+            white-space: nowrap;
+            animation: moveBanner 20s linear infinite;
+        }
+        /* Style for the header text */
+        header h1 {
+            font-size: 35px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0 10px;
+        }
+        /* Animation for the header text */
+        @keyframes moveBanner {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        /* Style for the main content */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: -165px; /* Adjusted value */
+        }
+        /* Style for the main heading */
+        .main-heading {
+            font-size: 55px;
+            margin: 0;
+            font-weight: normal;
+        }
+        /* Style for the coming soon text */
+        .coming-soon {
+            font-size: 65px;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+        /* Style for the subheading */
+        .subheading {
+            font-size: 25px;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+        /* Style for the footer */
+        footer {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            font-family: 'Helvetica', sans-serif;
+            text-transform: uppercase;
+        }
+        /* Style for the footer container */
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        /* Style for the footer container divs */
+        .footer-container div {
+            margin-left: 20px;
+            text-align: left;
+            flex: 1;
+        }
+        /* Style for the footer headings */
+        .footer-container h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        /* Style for the footer paragraphs */
+        .footer-container p {
+            font-size: 16px;
+            margin: 0;
+            font-weight: normal;
+        }
+        /* Style for the address container */
+        .address-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        /* Style for the address container divs */
+        .address-container div {
+            flex: 1;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="header-text">
+            <h1>WE'RE ABOUT TO DROP SOMETHING BIG.</h1>
+            <h1>WE'RE ABOUT TO DROP SOMETHING BIG.</h1>
+        </div>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <h1 class="main-heading">WAWTEMELAN</h1>
+        <h2 class="coming-soon">COMING SOON</h2>
+        <h3 class="subheading">THURSDAY 9th OCTOBER 2025</h3>
+    </main>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h2>CONTACT EMAIL</h2>
+                <p>hello@wawtemelan.com</p>
+            </div>
+            <div class="address-container">
+                <div>
+                    <p>DHAKA OFFICE<br>KHILGAON<br>14/A 2B<br>1219 DHAKA<br>BANGLADESH</p>
+                </div>
+                <div>
+                    <p>MADRID OFFICE<br>CALLE DE BRAVO MURILLO<br>25-6 5A<br>28015 MADRID<br>SPAIN</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
