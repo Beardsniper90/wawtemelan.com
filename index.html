@@ -89,10 +89,26 @@
             text-transform: uppercase;
         }
         /* Style for the footer container */
-        @media(max-width: 500px){
-            .footer-container{
+        @media (max-width: 500px) {
+            .footer-container {
                 display: flex;
                 flex-direction: column;
+                align-items: center; /* Center align the content */
+                text-align: center; /* Center align the text */
+            }
+
+            .footer-container div {
+                margin-left: 0; /* Remove left margin for better alignment */
+                margin-bottom: 20px; /* Add spacing between sections */
+            }
+
+            .address-container {
+                flex-direction: column; /* Stack the address sections vertically */
+                align-items: center; /* Center align the addresses */
+            }
+
+            .address-container div {
+                margin: 10px 0; /* Add spacing between address blocks */
             }
         }
         /* Style for the footer container divs */
