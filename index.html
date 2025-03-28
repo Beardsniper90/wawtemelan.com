@@ -89,10 +89,10 @@
             text-transform: uppercase;
         }
         /* Style for the footer container */
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
+        @media(max-width: 500px){
+            .footer-container{
+                flex-direction: column;
+            }
         }
         /* Style for the footer container divs */
         .footer-container div {
